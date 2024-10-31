@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.box {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 16px;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    li{
+        height: 200px;
+        background-color: black;
+    }
+}
+/*Tablet no horizontal*/
+@media only screen and (max-width: 1024px) {
+    .box{
+        background-color: brown;
+        
+    }
+    ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+/*Tablet na vertical*/
+@media only screen and (max-width: 768px) {
+    .box{
+        background-color:aqua;
+    }
+    ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+/*Smartohones*/
+@media only screen and (max-width: 600px) {
+    .box{
+        background-color:gold;
+    }
+    ul{
+        grid-template-columns: 1fr;
+    }
+
+}
